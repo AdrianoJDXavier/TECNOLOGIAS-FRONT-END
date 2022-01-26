@@ -8,7 +8,8 @@ const TextArea = props => {
         value: '',
     });
 
-    function onChangeText(event) {
+    /* Adiciona a variavel qtd_caracter o total de caracteres digitados */
+    const onChangeText = (event) => {
         setTextAreaState({ qtd_caracter: event.target.value.length });
     }
 
