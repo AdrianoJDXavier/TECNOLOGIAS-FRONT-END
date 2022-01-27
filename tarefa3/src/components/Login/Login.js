@@ -1,25 +1,38 @@
 import React, { useState } from "react";
+import './Login.css';
 
 const Login = props => {
-var result
-    const [LoginState, setLoginState] = useState({
-        logado: 0,
-    });
 
-    const logar = (event) => {
-        setLoginState({ logado: event.target.value });
-        if(setLoginState.logado === 'Logar'){
-            result = '<p>Logou</p>'
+    const [LoginState, setLoginState] = useState({
+        logado: 'Logar',
+        estado: 'Por favor faça o login',
+        image: 'circle.png',
+    });
+    const logar = (props) => {
+        if (LoginState.logado === 'Logar') {
+            setLoginState({
+                logado: 'Logout',
+                estado: 'Seja bem vindo!',
+                image: 'aproved.png'
+            })
+        } else {
+            setLoginState({
+                logado: 'Logar',
+                estado: 'Por favor faça o login!!',
+                image: 'circle.png'
+            })
         }
     }
-
 
     return (
         <div>
             <div>
-                {result}
+                <h2>{LoginState.estado}</h2>
+                <div className="divImg">
+                <img className="imageLogin" alt="" src={LoginState.image} />
+                </div>
             </div>
-            <input type='button' value='Logar' onClick={logar} />
+            <input className="button" type='button' value={LoginState.logado} onClick={logar} />
         </div>
     );
 

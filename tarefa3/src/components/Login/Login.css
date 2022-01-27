@@ -1,0 +1,38 @@
+.divImg{
+    display: flex;
+    height: 100px;
+}
+.imageLogin{
+    width: 100px;
+    height: auto;
+    margin: auto;
+}
+.button{
+    color: #fff;
+    background-color: #0000FF;
+    border-color: #0000FF;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    display: inline-block;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: #0000CD;
+    border-color: #0000CD;
+    font-size: 15px;
+}
