@@ -1,12 +1,10 @@
 import './App.css';
-import Login from './components/Login/Login';
-import TextArea from './components/TextAres/TextArea';
+import Menu from './components/Menu/Menu';
 
 function App() {
   return (
     <div className="App">
-      <TextArea/>
-      <Login/>
+      <Menu/>
     </div>
   );
 }

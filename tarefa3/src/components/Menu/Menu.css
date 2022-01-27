@@ -1,0 +1,33 @@
+#menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    text-align: initial;
+    margin-left: 1%;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li .button {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+.button{
+    margin: 1%;
+}
+
+#menu-h ul li .button:hover {
+    background-color: rgb(10, 120, 209);
+}
+
+#menu-h .button {
+    background-color: rgb(24, 139, 233);
+}
