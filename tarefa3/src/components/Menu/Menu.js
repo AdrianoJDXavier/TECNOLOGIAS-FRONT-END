@@ -3,7 +3,6 @@ import Login from "../Login/Login";
 import TextArea from "../TextAres/TextArea";
 import './Menu.css';
 
-
 const Menu = props => {
 
     const [MenuState, setMenuState] = useState({
@@ -29,10 +28,6 @@ const Menu = props => {
                     <li><input className="button" type='button' value="Tarefa contador" onClick={tarefa2} /></li>
                 </ul>
             </nav>
-
-
-            
-            
             <div>
                 {MenuState.tarefa === 1 ? <Login /> : null}
                 {MenuState.tarefa === 2 ? <TextArea /> : null}

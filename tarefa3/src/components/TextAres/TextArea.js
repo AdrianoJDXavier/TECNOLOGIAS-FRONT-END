@@ -19,7 +19,5 @@ const TextArea = props => {
             <p>Esse texto contém <b>{TextAreaState.qtd_caracter}</b> caracteres</p>
         </div>
     );
-
-
 }
 export default TextArea;

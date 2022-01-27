@@ -35,7 +35,5 @@ const Login = props => {
             <input className="button" type='button' value={LoginState.logado} onClick={logar} />
         </div>
     );
-
-
 }
 export default Login;
