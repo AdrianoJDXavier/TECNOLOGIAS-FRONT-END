@@ -13,7 +13,7 @@
 
 .input {
     border: 0;
-    border-bottom: 2px solid #f4d587;
+    border-bottom: 2px solid #56a0dd;
     outline: none;
     transition: .2s ease-in-out;
     box-sizing: border-box;
@@ -42,12 +42,12 @@ label {
 
 .input:valid,
 .input:focus {
-    border-bottom: 2px solid #eea849;
+    border-bottom: 2px solid #3b6edd;
 }
 
 .input:valid+label,
 .input:focus+label {
-    color: #eea849;
+    color: #3b6edd;
     font-size: .8rem;
     top: -30px;
     pointer-events: none;
