@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './NovaTarefa.css';
 
 const NovaTarefa = ({ onSubmit }) => {
 

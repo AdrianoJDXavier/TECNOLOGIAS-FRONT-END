@@ -3,6 +3,7 @@ import './App.css';
 import NovaTarefa from './components/NovaTarefa/NovaTarefa';
 import ListaTarefa from './components/ListaTarefa/ListaTarefa'
 import { useState } from 'react';
+import Menu from './components/Menu/Menu';
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const deleteTarefa = (index) => {
   return (
     <div className="App">
       <div>
+        <Menu/>
         <NovaTarefa onSubmit={addNovaTarefa} />
         {tarefas.map(({ id, value }, index) => (
           <ListaTarefa
