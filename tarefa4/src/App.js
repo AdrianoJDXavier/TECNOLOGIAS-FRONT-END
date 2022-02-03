@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NovaTarefa from './components/NovaTarefa/NovaTarefa';
+import ListaTarefa from './components/ListaTarefa/ListaTarefa'
 import { useState } from 'react';
 
 
@@ -13,9 +14,31 @@ const addNovaTarefa = (task) => {
   setTarefas(copiaTarefa);
 }
 
+const AtualizaTarefa = ({ target }, index) => {
+  const copiaTarefa = Array.from(tarefas);
+  copiaTarefa.splice(index, 1, { id: index, value: target.value });
+  setTarefas(copiaTarefa);
+}
+
+const deleteTarefa = (index) => {
+  const copiaTarefa = Array.from(tarefas);
+  copiaTarefa.splice(index, 1);
+  setTarefas(copiaTarefa);
+}
+
   return (
     <div className="App">
-      <NovaTarefa onSubmit={addNovaTarefa} />
+      <div>
+        <NovaTarefa onSubmit={addNovaTarefa} />
+        {tarefas.map(({ id, value }, index) => (
+          <ListaTarefa
+            key={id}
+            value={value}
+            onChange={(event) => AtualizaTarefa(event, index)}
+            onDelete={() => deleteTarefa(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
