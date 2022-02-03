@@ -114,4 +114,13 @@
     }
   }
   
-  
+  .Menu-logo {
+      height: 50px;
+      pointer-events: none;
+    }
+    
+    @media (prefers-reduced-motion: no-preference) {
+      .Menu-logo {
+        animation: App-logo-spin infinite 5s linear;
+      }
+    }

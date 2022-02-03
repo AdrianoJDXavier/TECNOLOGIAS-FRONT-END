@@ -30,7 +30,7 @@ const deleteTarefa = (index) => {
   return (
     <div className="App">
       <div>
-        <Menu/>
+        <Menu logo={logo}/>
         <NovaTarefa onSubmit={addNovaTarefa} />
         {tarefas.map(({ id, value }, index) => (
           <ListaTarefa
