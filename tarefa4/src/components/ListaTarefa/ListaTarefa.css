@@ -34,3 +34,6 @@
 .inputList:focus {
     border-bottom: 2px solid #56a0dd; 
 }
+.inputMark{
+    background-color: #56a0dd;
+}
