@@ -65,6 +65,7 @@ position: relative;
     background-color: #00BFFF;
     color: white;
     font-weight: bold;
+    border: 1px;
 }
 
 .btn-submit:hover{

@@ -1,25 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ListaTarefa.css'
 
 const ListaTarefa = ({ onChange, onDelete, value }) => {
-    
-       var classe = 'list';
-    
-    
-        if (value.includes('ler') || value.includes('escrever')) {
-            
-                classe = 'inputMark';
-            
-        }
-    
-    const classes = `inputList ${classe}`
+    const [Tarefa, setTarefa] = useState({
+        classe: 'inputList',
+    })
+
+    if ((value.split(/\W+/).includes('ler') || value.split(/\W+/).includes('estudar'))) {
+        setTarefa({
+            classe: 'inputList inputMark',
+        })
+    }
+
 
     return (
         <div className="container-tarefa">
             <input type='checkbox' className="check" />
             <div className="list-tarefa">
                 <input
-                    className={classes}
+                    className={Tarefa.classe}
                     value={value}
                     onChange={onChange}
                 />

@@ -12,6 +12,7 @@
     background-color: #B22222;
     color: white;
     font-weight: bold;
+    border: 1px;
 }
 
 .btn-delete:hover{
@@ -36,4 +37,7 @@
 }
 .inputMark{
     background-color: #56a0dd;
+}
+.focusout{
+    display: none;
 }
