@@ -1,0 +1,73 @@
+.div_form {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+}
+
+.input {
+    border: 0;
+    border-bottom: 2px solid #f4d587;
+    outline: none;
+    transition: .2s ease-in-out;
+    box-sizing: border-box;
+}
+
+label {
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #616161;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 1rem;
+    cursor: text;
+    transition: .2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.input,
+label {
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+.input:valid,
+.input:focus {
+    border-bottom: 2px solid #eea849;
+}
+
+.input:valid+label,
+.input:focus+label {
+    color: #eea849;
+    font-size: .8rem;
+    top: -30px;
+    pointer-events: none;
+}
+
+button{
+    border-radius: 15px;
+    font-size: larger;
+    -webkit-box-shadow: 2px 2px 6px 2px #000000; 
+box-shadow: 2px 2px 6px 2px #000000;
+position: relative;
+}
+
+.btn-submit{
+    background-color: #00BFFF;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-submit:hover{
+    background-color: #1E90FF;
+    scale: 1.5;
+}

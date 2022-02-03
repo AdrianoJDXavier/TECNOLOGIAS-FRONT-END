@@ -1,0 +1,37 @@
+.container-tarefa{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.list-tarefa{
+    position: relative;
+    display: inline-block;
+    width: 88%;
+}
+.btn-delete{
+    background-color: #B22222;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-delete:hover{
+    background-color: #FF0000;
+    scale: 1.5;
+}
+.check{
+    width: 20px;
+    height: 20px;
+}
+.inputList {
+    border: 0;
+    /* border-bottom: 2px solid #f4d587; */
+    outline: none;
+    transition: .2s ease-in-out;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+}
+.inputList:focus {
+    border-bottom: 2px solid #f4d587; 
+}
