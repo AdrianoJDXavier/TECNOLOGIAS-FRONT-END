@@ -13,6 +13,7 @@ const NovaTarefa = ({ onSubmit }) => {
 
   const submit = (e) => {
     e.preventDefault();
+    
     onSubmit(newTarefa);
     limpaCampo();
   }

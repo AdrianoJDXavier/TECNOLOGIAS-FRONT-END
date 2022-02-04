@@ -5,7 +5,6 @@ const ListaTarefa = ({ onChange, onDelete, value }) => {
     const [ListState, setListState] = useState({
         classe: 'inputList',
         condicao: 0,
-        oculto: 0,
     });
 
     useEffect(() => {
@@ -13,12 +12,12 @@ const ListaTarefa = ({ onChange, onDelete, value }) => {
             setListState({
                 condicao: 1,
             })
-        }else{
+        } else {
             setListState({
                 condicao: 0,
             })
         }
-    }, [value]); 
+    }, [value]);
 
     return (
         <div className="container-tarefa">
@@ -30,7 +29,7 @@ const ListaTarefa = ({ onChange, onDelete, value }) => {
                     onChange={onChange}
                 />
             </div>
-            <button className={ListState.oculto === 0 ? 'focusout': 'btn-delete'} title='Deletar' onClick={onDelete}>X</button>
+            <button className='btn-delete' title='Deletar' onClick={onDelete}>X</button>
         </div>
     );
 };

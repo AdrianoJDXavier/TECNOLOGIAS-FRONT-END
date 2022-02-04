@@ -53,22 +53,22 @@ label {
     pointer-events: none;
 }
 
-button{
+button {
     border-radius: 15px;
     font-size: larger;
-    -webkit-box-shadow: 2px 2px 6px 2px #000000; 
-box-shadow: 2px 2px 6px 2px #000000;
-position: relative;
+    -webkit-box-shadow: 2px 2px 6px 2px #000000;
+    box-shadow: 2px 2px 6px 2px #000000;
+    position: relative;
 }
 
-.btn-submit{
+.btn-submit {
     background-color: #00BFFF;
     color: white;
     font-weight: bold;
     border: 1px;
 }
 
-.btn-submit:hover{
+.btn-submit:hover {
     background-color: #1E90FF;
     scale: 1.5;
 }
