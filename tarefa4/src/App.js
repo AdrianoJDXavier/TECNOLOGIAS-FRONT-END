@@ -27,6 +27,7 @@ const deleteTarefa = (index) => {
   setTarefas(copiaTarefa);
 }
 
+
   return (
     <div className="App">
       <div>
