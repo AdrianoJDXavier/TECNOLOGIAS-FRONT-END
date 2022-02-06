@@ -8,7 +8,7 @@ const ListaTarefa = ({ onChange, onDelete, value }) => {
     });
 
     useEffect(() => {
-        if ((value.split(/\W+/).includes('ler') || value.split(/\W+/).includes('estudar'))) {
+        if ((value.toLowerCase().split(/\W+/).includes('ler') || value.toLowerCase().split(/\W+/).includes('estudar'))) {
             setListState({
                 condicao: 1,
             })
