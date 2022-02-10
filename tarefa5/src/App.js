@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
+import logo from './logo.svg';
+import './App.css';
 import SignForm from './components/SignForm/SignForm';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, GlobalStyles } from './theme';
+import Menu from './components/Menu/Menu';
 
 const App = () => {
   const [theme, setTheme] = useState("light");
@@ -9,11 +12,7 @@ const App = () => {
   const toggleTheme = () => setTheme(isDarkTheme ? "light" : "dark");
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-      <button className="btn-theme shadow" onClick={toggleTheme}>
-        {isDarkTheme ?
-          <span aria-label="Light mode" role="img">Tema Claro</span> :
-          <span aria-label="Dark mode" role="img">Tema Escuro</span>}
-      </button>
+      <Menu logo={logo} DarkTheme={isDarkTheme} onclick={toggleTheme}/>
       <div className='center'>
         <GlobalStyles />
         <SignForm />
