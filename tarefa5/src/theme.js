@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'; export
 
-    const GlobalStyles = createGlobalStyle`
+    const NewStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
@@ -19,21 +19,6 @@ import { createGlobalStyle } from 'styled-components'; export
   .div_form{
       border: 1px solid ${({ theme }) => theme.text};
       background: ${({ theme }) => theme.form};
-      margin-left:25%;
-      margin-right: 25%;
-      padding-top: 30px;
-      padding-bottom: 50px;
-      border-radius:10px;
-  }
-  .btn-submit{
-    border-radius: 0px 10px 10px 0px;
-  }
-  .btn-theme{
-    margin-left: 90%;
-    margin-top: 1em;
-    height: 40px;
-    font-weight: bold;
-    float: left;
   }
   .shadow{ 
     box-shadow: 5px 5px 15px 5px ${({ theme }) => theme.shadow};

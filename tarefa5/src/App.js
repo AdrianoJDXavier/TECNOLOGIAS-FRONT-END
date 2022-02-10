@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import SignForm from './components/SignForm/SignForm';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme, GlobalStyles } from './theme';
+import { lightTheme, darkTheme, NewStyles } from './theme';
 import Menu from './components/Menu/Menu';
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <Menu logo={logo} DarkTheme={isDarkTheme} onclick={toggleTheme}/>
       <div className='center'>
-        <GlobalStyles />
+        <NewStyles />
         <SignForm />
       </div>
     </ThemeProvider>
