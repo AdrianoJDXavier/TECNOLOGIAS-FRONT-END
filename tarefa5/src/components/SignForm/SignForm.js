@@ -3,11 +3,11 @@ import React from 'react';
 const SignForm = () => {
 
     return (
-        <div>
+        <div className="div_form shadow">
             <h3>Sign up to my newslatter</h3>
             <form>
                 <input />
-                <button type="submit">
+                <button className="btn-submit" type="submit">
                     Sign up
                 </button>
             </form>
