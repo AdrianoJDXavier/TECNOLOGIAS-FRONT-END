@@ -12,7 +12,7 @@ const Menu = ({logo, DarkTheme, onclick}) => {
       <label className='menu-button-container' htmlFor="menu-toggle">
         <div className='menu-button'></div>
       </label>
-      <button className="btn-theme shadow" onClick={onclick}>
+      <button className="btn-theme" onClick={onclick}>
         {DarkTheme ?
           <span aria-label="Light mode" role="img">Tema Claro</span> :
           <span aria-label="Dark mode" role="img">Tema Escuro</span>}

@@ -38,6 +38,11 @@ import { createGlobalStyle } from 'styled-components'; export
   .shadow{ 
     box-shadow: 5px 5px 15px 5px ${({ theme }) => theme.shadow};
   }
+  .top-nav{
+    background-color: ${({ theme }) => theme.button};
+    background: linear-gradient(to left, ${({ theme }) => theme.menu1}, ${({ theme }) => theme.menu2});
+    color: ${({ theme }) => theme.text};
+  }
 `; export const lightTheme = {
     body: '#f1f1f1',
     text: '#121620',
@@ -45,6 +50,8 @@ import { createGlobalStyle } from 'styled-components'; export
     textButton: '#FFFFFF',
     form :'#DCDCDC',
     shadow: '#464646',
+    menu1: '#ADD8E6',
+    menu2: '#D3D3D3',
 }; export const darkTheme = {
     body: '#121620',
     text: '#f1f1f1',
@@ -52,4 +59,6 @@ import { createGlobalStyle } from 'styled-components'; export
     textButton: '#000000',
     form: '#1C1C1C',
     shadow: '#464646',
+    menu1: '#464646',
+    menu2: '#464646',
 };

@@ -3,9 +3,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #00BAF0;
-    background: linear-gradient(to left, #56a0dd, #3b6edd);
-    color: #FFF;
     height: 50px;
     padding: 1em;
   }
